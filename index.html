@@ -482,28 +482,36 @@ These flaws are dangerous because stolen credentials or modified files let attac
                 </div>
 
 
-                <div class="contact-form">
+                <div class="contact-form" action="https://formspree.io/f/xvgbjvoo" method="POST">
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" name="_replyto" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" required>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" id="encrypt">
                             <label for="encrypt">Encrypt message with PGP</label>
                         </div>
+                       
+                        <!-- Hidden help fields 
+                        <input type="hidden" name="_subject" value="New message from portfolio">
+                        <input type="hidden" name="_next" value="https://kareem-omran02.github.io/thankyou.html">
+                         
+                        Honeypot anti-spam field (invisible to users) 
+                        <input type="text" name="_gotcha" style="display:none">
+                        -->
                         <button type="submit" class="btn">Send Securely</button>
                     </form>
                 </div>
