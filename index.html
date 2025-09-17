@@ -486,15 +486,15 @@ These flaws are dangerous because stolen credentials or modified files let attac
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input id="name" name="name" required />
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="_replyto" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -504,14 +504,7 @@ These flaws are dangerous because stolen credentials or modified files let attac
                             <input type="checkbox" id="encrypt">
                             <label for="encrypt">Encrypt message with PGP</label>
                         </div>
-                       
-                        <!-- Hidden help fields 
-                        <input type="hidden" name="_subject" value="New message from portfolio">
-                        <input type="hidden" name="_next" value="https://kareem-omran02.github.io/thankyou.html">
-                         
-                        Honeypot anti-spam field (invisible to users) 
-                        <input type="text" name="_gotcha" style="display:none">
-                        -->
+                    
                         <button type="submit" class="btn">Send Securely</button>
                     </form>
                 </div>
